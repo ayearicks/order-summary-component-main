@@ -1,0 +1,138 @@
+:root {
+  --PaleBlue: hsl(225, 100%, 94%);
+  --BrightBlue: hsl(245, 75%, 52%);
+  --VeryPaleBlue: hsl(225, 100%, 98%);
+  --DesatBlue: hsl(224, 23%, 55%);
+  --DarkBlue: hsl(223, 47%, 23%);
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: var(--PaleBlue);
+  background-image: url(images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+}
+
+#main {
+  background-color: white;
+  width: 90%;
+  margin: 4rem auto;
+  border-radius: 20px;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+  }
+  #main {
+    width: 70%;
+  }
+}
+
+@media (min-width: 992px) {
+  #main {
+    width: 50%;
+  }
+}
+
+#top-img img {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+#desc {
+  text-align: center;
+}
+
+#desc h1 {
+  color: var(--DarkBlue);
+  font-weight: 900;
+  font-size: 22px;
+}
+
+#desc p {
+  width: 80%;
+  margin: 0 auto;
+  color: var(--DesatBlue);
+  line-height: 1.5;
+}
+
+#price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: var(--VeryPaleBlue);
+  width: 85%;
+  margin: 2rem auto;
+  border-radius: 10px;
+}
+
+#price #inner-price h2 {
+  color: var(--DarkBlue);
+  font-size: 14px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+#price #inner-price p {
+  color: var(--DesatBlue);
+  font-size: 14px;
+  margin-top: 0;
+  text-align: left;
+}
+
+#price a {
+  font-size: 12px;
+  color: var(--BrightBlue);
+}
+
+#buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#buttons .btn {
+  text-decoration: none;
+  padding: 10px 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#buttons #payment {
+  color: white;
+  background-color: var(--BrightBlue);
+  font-weight: 700;
+}
+
+#buttons #cancel {
+  color: var(--DesatBlue);
+  font-weight: 700;
+  font-size: 14px;
+  background-color: var(--VeryPaleBlue);
+  padding: 2rem 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
